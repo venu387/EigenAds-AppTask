@@ -1,0 +1,152 @@
+<html>
+<head>
+    <title>Application Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css" />
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- <h1>Application Task<a href="#"></a></h1> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="col-sm-4 c-form-1-box wow fadeInUp animated draggable" id="signform" style="cursor: move;">
+
+        <i class="fa fa-chevron-circle-up fa-2x btnmin" aria-hidden="true"></i>
+        <div>
+            <!--Welcome div-->
+            <div class="c-form-1-top welcomeform" style="display: none;">
+                <div class="c-form-1-top-left">
+                    <img src="assets/ico/android-icon-144x144.png" style="width: 58px;">
+                    <div style="display: inline-block;">
+                        <h3>Welcome! <strong id="username">Guest</strong></h3>
+                    </div>
+                </div>
+                <div class="errout">
+                </div>
+
+                <div class="onoffswitch">
+                    <div class="toggleswitch">
+                        <h3>Show My Regions</h3>
+                    </div>
+                    <div class="btntog">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btnlogout">
+                    <a class="btn btn-link-2 scroll-link" data-toggle="tab" href="#" aria-expanded="false">
+                        Log Out<i class="fa fa-user-circle-o"></i>
+                    </a>
+                </div>
+            </div>
+            <!--User login and signup div-->
+            <div class="divsignup">
+                <ul class="c-form-1-top loginbtns nav nav-tabs">
+                    <li>
+                        <img src="assets/ico/android-icon-144x144.png" style="width: 58px;">
+                    </li>
+                    <li role="" class="active">
+                        <a class="btn btn-link-2 scroll-link" data-toggle="tab" href="#collapseLogin" aria-expanded="false">
+                            Log In <i class="fa fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li role="">
+                        <a class="btn btn-link-2 scroll-link" data-toggle="tab" href="#collapseSignup" aria-expanded="false">
+                            Sign Up <i class="fa fa-user-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="c-form-1-bottom tab-pane fade in active" id="collapseLogin">
+                        <!--User login form-->
+                        <form role="form" action="#" id="signinform">
+                            <div>
+                                <div class="errsi">
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-email">Email</label>
+                                    <input type="email" name="email" placeholder="Email..." class="c-form-1-email form-control" id="c-form-1-email" data-error="Email address is invalid" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-password">Password</label>
+                                    <input type="password" name="password" placeholder="Password..." class="c-form-1-password form-control" id="c-form-1-password" data-minlength="6" />
+                                </div>
+                                <button type="button" class="btn btncustom btnlogin">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="c-form-1-bottom tab-pane fade" id="collapseSignup">
+                        <!--User signup form-->
+                        <form role="form" action="" method="" id="signupform">
+                            <div>
+                                <div class="errsu">
+
+                                </div>
+                                <div class="alert alert-danger err">
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-fname">First Name</label>
+                                    <input type="text" name="fsname" placeholder="First Name..." class="c-form-1-fname form-control" id="c-form-1-fname" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-lname">Last Name</label>
+                                    <input type="text" name="lsname" placeholder="Last Name..." class="c-form-1-lname form-control" id="c-form-1-lname" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-semail">Email</label>
+                                    <input type="email" name="email" placeholder="Email..." class="c-form-1-email form-control" id="c-form-1-semail" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c-form-1-spassword">Password</label>
+                                    <input type="password" name="password" placeholder="Password..." class="c-form-1-password form-control" id="c-form-1-spassword" />
+                                </div>
+                                <button type="button" class="btn btncustom btnsignup">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBbgHxuq-4uiN25-Y_P0P0mNWwd-C369Wc"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/myscripts.js"></script>
+</body>
+</html>
