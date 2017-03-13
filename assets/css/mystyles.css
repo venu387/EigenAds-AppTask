@@ -1,0 +1,181 @@
+
+html 
+{ 
+	height: 100%;
+	//overflow: hidden;
+}
+body 
+{
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+}
+#map 
+{ 
+	position: absolute;
+	height: 100%; 
+	width: 100%; 
+}
+#over_map 
+{
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+	z-index: 99; 
+}
+#signform
+{
+	 visibility: visible;
+	 animation-name: fadeInUp; 
+	 float: right; 
+	 margin-top: 1%;
+}
+.c-form-1-top.loginbtns
+{
+    padding-top: 20px;
+    padding-left: 32px;
+    //padding-right: 20%;
+}
+.loginsignup 
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 4px 4px 0 0;
+}
+
+input[type="password"], input[type="email"]
+{
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    //border: 1px solid #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #888;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.btncustom
+{
+	background: #4e5050 !important;
+}
+.err
+{
+	display: none;
+}
+.btnlogout
+{
+	float: right;
+}
+
+/* Flip button */
+.onoffswitch {
+    position: relative; width: 67px;
+    //margin-top: 112px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #484848; border-radius: 15px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 26px; padding: 0; line-height: 26px;
+    font-size: 11px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #FF0401; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #ADAAAA; color: #4D4D4D;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 22px; margin: 2px;
+    background: #D4D6F7;
+    position: absolute; top: 0; bottom: 0;
+    right: 37px;
+    border: 2px solid #484848; border-radius: 15px;
+    transition: all 0.3s ease-in 0s; 
+
+    height: 26px;
+    top: inherit;
+    width: 26px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+/* flip switch end */
+
+.toggleswitch h3
+{
+	color: white;
+}
+.toggleswitch
+{
+	width: 200px;
+    margin-top: 110px;
+}
+.errsu .errout .errsi
+{
+	display: none;
+}
+
+.has-error
+{
+	border-color: #ff0401 !important;
+}
+
+.has-error input[type="text"]
+{
+	border: 1px solid #a94442 !important;
+}
+.help-block
+{
+	color: #ff0401 !important;
+    font-weight: 700;
+}
+.has-success input[type="text"]
+{
+	border: 1px solid #3c763d !important;
+}
+.btnmin
+{
+    position: absolute;
+    right: 16px;
+    border-radius: 3px;
+    top: 1px;
+    cursor: pointer;
+    color: #ff0000;
+    margin-right: 2px;
+}
